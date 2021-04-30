@@ -8,7 +8,10 @@
     <title>Check Out Page - Devchallenges</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="icon" href="devchallenges.png">
 </head>
 
 <body>
@@ -24,11 +27,13 @@
                 <div class="contact-info">
                     <h2>Contact information</h2>
                     <div class="email-info">
+                        <i class="fas fa-envelope"></i>
                         <label for="email">E-mail</label>
                         <input type="text" placeholder="Enter your email...">
                     </div>
 
                     <div class="phone-info">
+                        <i class="fas fa-phone"></i>
                         <label for="phone">Phone</label>
                         <input type="number" placeholder="Enter your phone...">
                     </div>
@@ -37,40 +42,63 @@
                 <div class="shipping-address">
                     <h2>Shipping address</h2>
                     <div class="name">
+                        <i class="fas fa-user-circle"></i>
                         <label for="full-name">Full name</label>
                         <input type="text" placeholder="Rodney Cotton">
                     </div>
 
                     <div class="address">
+                        <i class="fas fa-home"></i>
                         <label for="address">Address</label>
+
                         <input type="text" placeholder="Your address...">
                     </div>
 
                     <div class="city">
+                        <i class="fas fa-city"></i>
                         <label for="city">City</label>
                         <input type="text" placeholder="Your city...">
                     </div>
 
                     <div class="country-and-postal_code">
                         <div class="country">
+                            <i class="fas fa-globe-americas"></i>
                             <label for="country">Country</label>
                             <select name="countries" id="countries">
-                                <option name="countries" id="blank" value="blank">Blank</option>
+                                <option name="countries" id="blank" value="blank"></option>
                                 <option name="countries" id="usa" value="usa">USA</option>
+                                <option name="countries" id="britain" value="britain">Britain</option>
+                                <option name="countries" id="france" value="france">France</option>
                             </select>
                         </div>
 
                         <div class="postal-code">
+                            <i class="fas fa-mail-bulk"></i>
                             <label for="postal-code">Postal code</label>
                             <input type="text" placeholder="Your postal code...">
                         </div>
                     </div>
                 </div>
+
+                <div class="save-information">
+                    <input type="checkbox" name="save-information" id="save-information" value="save-information"> Save
+                    information for next time
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit">Continue</button>
+                </div>
             </form>
         </section>
 
         <section id="items">
-            Items
+            <div class="item">
+                <img src="photo1.png" alt="Black backpack">
+
+                <div class="price-and-amount">
+                    Price and Item Amount
+                </div>
+            </div>
         </section>
     </div>
 </body>

@@ -13,34 +13,126 @@ body {
 section {
     /* border: 3px solid #000; */
     padding: 0;
+
+    height: fit-content;
+}
+
+h2 {
+    color: #333333;
+    font-size: 18px;
+}
+
+img {
+    width: 50%;
 }
 
 #container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
 
-    gap: 20px;
+    gap: 120px;
 
     margin: 0 auto;
     padding: 24px;
 
     max-width: 1000px;
-    height: 100vh;
+    height: fit-content;
 }
 
 #title {
     color: #4E5150;
     font-size: 36px;
     padding: 0;
+    margin: 0;
+    height: 100%;
+
+    grid-column: 1;
 }
 
 #form {
     grid-column: 1;
-    grid-row: 2 / span 2;
 }
 
 #items {
     grid-column: 2;
-    grid-row: 2 / span 2;
+
+    background-color: #F2F2F2;
+    border-radius: 12px;
+
+    padding: 20px 20px;
+}
+
+form input[type='text'], form input[type='number'], form select {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: 100%;
+
+    padding: 18px 52px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    border: 1px solid #828282;
+    border-radius: 12px;
+
+    outline: none;
+}
+
+form option {
+    color: #4F4F4F;
+}
+
+form label {
+    color: #4F4F4F;
+    font-size: 12px;
+    position: relative;
+    right: 28px;
+}
+
+.contact-info {
+    margin-bottom: 80px;
+}
+
+i.fas {
+    position: relative;
+    top: 45px;
+    left: 10px;
+
+    color: #828282;
+}
+
+i.fas.fa-phone {
+    transform: rotate(105deg);
+}
+.country-and-postal_code {
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.save-information {
+    color: #4F4F4F;
+    font-size: 12px;
+}
+
+.submit-button {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background: #F2994A;
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    padding: 17px 45px;
+
+    outline: none;
+    border: none;
+    border-radius: 12px;
 }
